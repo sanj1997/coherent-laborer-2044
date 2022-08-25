@@ -1,0 +1,377 @@
+.features{
+    width: 85%;
+    /* border: 1px solid red; */
+    background-color: rgb(252,229,216);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 35px;
+    gap: 20px;
+    margin-top: 80px;
+}
+.features>div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.features>div:nth-child(2){
+    border-left: 2px solid rgb(129,113,135);
+    border-right: 2px solid rgb(129,113,135);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.onBoarding{
+    color: rgb(241,222,207);
+    width: 25%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.onBoarding svg{
+    color:rgb(241,222,207) ;
+    margin-left: 10px;
+}
+.homecards{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 85%;
+    margin: auto;
+    margin-top: 70px;
+}
+.homecards>div{
+   padding: 25px;
+   position: relative;
+   height: 600px;
+}
+.homecards>div>img{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.homecards>div:first-child{
+    background-color: rgb(250,229,247);
+    /* border: 1px solid teal; */
+}
+.homecards>div:last-child{
+    background-color: rgb(252,229,216);
+    /* border: 1px solid teal; */
+}
+.typecards{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 85%;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.typecards>div{
+    /* border: 1px solid red; */
+    padding: 25px;
+}
+.typecards>div:first-child{
+    background-color: rgb(252,229,216);
+}
+.typecards>div:nth-child(2){
+    background-color: rgb(255,235,189);
+}
+.typecards>div:last-child{
+    background-color: rgb(250,229,247);
+}
+.typecards>div>button{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: 20px;
+}
+.typecards>div>button>svg{
+    /* border: 1px solid red; */
+    margin-top: 2.5px;
+}
+.skewBox{
+    /* border: 1px solid red; */
+    background-color: rgb(44,19,56);
+    color: white;
+    /* height: 500px; */
+    /* transform: skewY(10deg); */
+    position: relative;
+    z-index: 1;
+    margin-top: -115px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.skewBox>img{
+    width: 30%;
+    /* transform: skewY(-10deg); */
+    position: absolute;
+    right: 5%;
+    top: -15%;
+}
+.skewBox>div{
+    /* position: relative; */
+    width: 85%;
+    margin: auto;
+    /* height: 600px; */
+    /* border: 1px solid red; */
+    /* transform: skewY(-10deg); */
+}
+.caseStudy{
+    /* border: 1px solid teal; */
+    display: flex;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-rows: auto; */
+    /* gap: 20px; */
+    padding: 2%;
+    margin-top: 50px;
+    position: relative;
+}
+.caseStudy>div{
+    /* border: 1px solid red; */
+    background-color: rgb(255,243,237);
+    color: black;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.caseStudy>div>button svg{
+    margin-top: 4px;
+}
+.caseStudy>div:nth-child(2){
+    position: absolute;
+    top: 28%;
+    left: 34%;
+    
+}
+.caseStudy>div:nth-child(3){
+    position: absolute;
+    top: 46%;
+    left: 68%;
+}
+.imageHolder{
+    /* border: 1px solid teal; */
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+}
+.imageHolder>div{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.imageHolder>div>button:last-child>svg{
+    margin-top: 4px;
+}
+.toolUseage{
+    /* border: 1px solid red; */
+    background-color: rgb(255,243,237);
+    padding: 50px;
+}
+.toolUseage>div{
+    width: 85%;
+    margin: auto;
+}
+.toolUseage>div:first-child{
+    /* border: 1px solid teal; */
+    display: flex;
+    justify-content: space-between;
+}
+.toolUseage>div:first-child>div:first-child{
+    width: 40%;
+    padding: 20px;
+}
+.toolUseage>div:first-child>div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+.toolUseage>div:first-child>div:last-child>img{
+    width: 80%;
+}
+.toolUseage>div:first-child>div:last-child>button{
+    position: absolute;
+    top: 40%;
+}
+.toolUseage>div:last-child{
+    /* border: 1px solid teal; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-top: 30px;
+}
+.toolUseage>div:last-child>div{
+    /* border:1px solid red; */
+    padding: 20px;
+}
+.toolUseage>div:last-child>div img{
+    margin: auto;
+    width: 60%;
+}
+.toolUseage>div:last-child>div:nth-child(2) img{
+    margin: auto;
+    width: 90%;
+}
+.toolUseage>div:last-child>div:nth-child(3) img{
+    margin: auto;
+    width: 50%;
+}
+.signUpContainer{
+    /* border: 1px solid red; */
+    background-color: rgb(65,42,76);
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+.signUpContainer>div:first-child{
+    width: 85%;
+    color: rgb(255,243,237);
+    margin: auto;
+}
+.signUpContainer>div:nth-child(2){
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid teal; */
+    margin-top: 50px;
+    height: 650px;
+    position: relative;
+}
+.signUpEmail{
+    /* border: 1px solid red; */
+    background-color: rgb(44,19,56);
+    color: rgb(250,227,215);
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+  
+    position: absolute;
+    z-index: 1;
+}
+.signUpEmail>div{
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.productDemo{
+    background-color: rgb(252,229,216);
+    width: 50%;
+    padding: 60px 80px;
+    /* border : 1px solid red; */
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+.signUpContainer>div:nth-child(3){
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgb(86,66,96);
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    height: 140px;
+    position: relative;
+}
+.signUpContainer>div:nth-child(3)>img{
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: -38%;
+    left: 5%;
+}
+.footer{
+    background-color: rgb(44,19,56);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* border: 1px solid red; */
+}
+.footer>div{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.footer>div:first-child>div{
+    display: grid;
+    /* border: 1px solid red; */
+    width: 100%;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    margin-top: 20px;
+}
+.footer>div:first-child>div>div>div{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.footer>div:nth-child(2){
+    /* border: 1px solid teal; */
+    width: 40%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer>div:nth-child(2) svg{
+    color: rgb(252,229,216);
+    /* border: 1px solid red; */
+    font-size: 30px;
+} 
+.footer>div:nth-child(2) svg:hover{
+    cursor: pointer;
+    color: rgb(229,124,216);
+}
+.banner{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.banner>div:first-child{
+    width: 100%;
+    background-color: rgb(65,42,76);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner>div:first-child>div{
+    /* border: 1px solid teal; */
+    color: rgb(252,229,216);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+.banner>div:last-child{
+    width: 100%;
+    background-color: rgb(229,124,216);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.banner>div:last-child>div{
+    width: 90%;
+    margin: auto;
+}

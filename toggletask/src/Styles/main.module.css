@@ -1,9 +1,11 @@
-.main{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* .main{ */
+    /* margin: 0px; */
+    /* padding: 0px; */
+    /* box-sizing: border-box; */
+    /* min-width: 100%; */
+    /* margin: auto; */
     /* border: 1px solid teal; */
-}
+/* } */
 .button{
     border-radius: 100%;
     border: 1px solid rgb(252,229,216);
@@ -23,23 +25,12 @@
 }
 .counter{
     display: flex;
-    /* border: 1px solid red; */
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     margin: auto;
     background-color: white;
     height: 80px;
     border-radius: 15px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; *
-    /* bottom: 0; */
-    /* content: ''; */
-    /* left: 45px; */
-    /* top: 0; */
-    /* transform: rotateY(-90deg); */
-    /* transform-origin: 100% 50%; */
-    /* width: 5px; */
-    z-index: -10;
 }
 .counter>svg{
     color:rgb(232,113,97);
