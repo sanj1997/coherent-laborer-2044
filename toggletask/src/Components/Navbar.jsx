@@ -1,5 +1,6 @@
 import { Box,Text,Highlight, Button } from "@chakra-ui/react"
 import {IoMdArrowDropdown} from "react-icons/io"
+import { Link } from "react-router-dom"
 import styles from "../Styles/navbar.module.css"
 const Navbar=()=>{
     return(
@@ -23,7 +24,7 @@ const Navbar=()=>{
             </Box>
             <Box display={"flex"} justifyContent="space-between" alignItems={"center"}>
             <Button borderRadius={"none"} borderRight={"2px solid white"} color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Book a demo</Button>  
-            <Button color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Log in</Button> 
+            <Link to="/login"><Button color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Log in</Button></Link> 
             <Button color={"rgb(229,124,216)"} size={"lg"} bg="brand.100" _hover={{backgroundColor:"transparent"}} borderRadius="22px">Try for free</Button> 
             </Box>
          </Box>
