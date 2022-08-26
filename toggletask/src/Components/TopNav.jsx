@@ -4,7 +4,11 @@ import {AiOutlinePlus,AiFillPlayCircle} from "react-icons/ai"
 import {BsFillTagFill,BsCurrencyDollar,BsFillStopCircleFill} from "react-icons/bs"
 import {IoMdAddCircle} from "react-icons/io"
 import CreateProject from "./TimerComponents/CreateProject"
+import { useContext } from "react"
+import { AppContext } from "../Context/AppContext"
+import ManageButton from "./TimerComponents/ManageButton"
 const TopNav=()=>{
+    const {showButton}=useContext(AppContext)
     return(
         <Box className={styles.topNav}>
             <Box>
@@ -12,7 +16,7 @@ const TopNav=()=>{
             </Box>
             <Box>
                 {/* <Button fontSize={"sm"} _active={"none"} bg="none" _hover={{bg:"rgb(241,240,242)"}} gap={"10px"}><AiOutlinePlus  color="rgb(217,129,208)"/>Create a project</Button> */}
-                <CreateProject/>
+                {showButton ? <CreateProject/>:<ManageButton/>}
                 <BsFillTagFill color="rgb(126,110,133)"/>
                 <BsCurrencyDollar color="rgb(126,110,133)"/>
                 <Box>

@@ -14,7 +14,7 @@ import { AppContext } from "../Context/AppContext"
 import MenuComp from "./menuComp"
 
 const SideNav=()=>{
-    const {email} =useContext(AppContext)
+    const {email,setName} =useContext(AppContext)
     let  str=""+email;
     let name=""
     for(let i=0;i<8;i++)
@@ -25,6 +25,7 @@ const SideNav=()=>{
         }
         name+=str[i]
     }
+    setName(name)
     return(
         <Box className={styles.sideNav}>
          <Box>
