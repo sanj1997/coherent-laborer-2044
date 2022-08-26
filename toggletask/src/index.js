@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import {ChakraProvider} from "@chakra-ui/react"
 import {BrowserRouter} from "react-router-dom"
 import {theme} from "./MyThemes/themes.jsx"
+import AppConetxtProvider from './Context/AppContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
+  <AppConetxtProvider>
   <BrowserRouter >
   <ChakraProvider theme={theme}>
   <App />
   </ChakraProvider>
   </BrowserRouter>
+  </AppConetxtProvider>
   // </React.StrictMode>
 );
 

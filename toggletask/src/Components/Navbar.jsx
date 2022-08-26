@@ -16,7 +16,7 @@ const Navbar=()=>{
          </Box>
          <Box className={styles.bottomnav}>
             <Box display={"flex"} justifyContent="space-between" alignItems={"center"}>
-            <Text fontSize='4xl' color={"rgb(229,124,216)"}><Highlight query='toggle' styles={{fontWeight:"1000",color:"rgb(229,124,216)"}}>toggle track</Highlight></Text>
+            <Link to="/"><Text fontSize='4xl' color={"rgb(229,124,216)"}><Highlight query='toggle' styles={{fontWeight:"1000",color:"rgb(229,124,216)"}}>toggle track</Highlight></Text></Link>
             <Button color={"white"} gap={"5px"} display={"flex"} alignItems="center"  _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Product <IoMdArrowDropdown/> </Button>
             <Button color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Pricing</Button>
             <Button color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Why Track? <IoMdArrowDropdown/> </Button>
@@ -25,7 +25,7 @@ const Navbar=()=>{
             <Box display={"flex"} justifyContent="space-between" alignItems={"center"}>
             <Button borderRadius={"none"} borderRight={"2px solid white"} color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Book a demo</Button>  
             <Link to="/login"><Button color={"white"} gap={"5px"} display={"flex"} alignItems="center" _hover={{color:"rgb(229,124,216)"}} _active={"none"} backgroundColor={"transparent"}>Log in</Button></Link> 
-            <Button color={"rgb(229,124,216)"} size={"lg"} bg="brand.100" _hover={{backgroundColor:"transparent"}} borderRadius="22px">Try for free</Button> 
+            <Link to="/timer"><Button color={"rgb(229,124,216)"} size={"lg"} bg="brand.100" _hover={{backgroundColor:"transparent"}} borderRadius="22px">Try for free</Button></Link>
             </Box>
          </Box>
         </>

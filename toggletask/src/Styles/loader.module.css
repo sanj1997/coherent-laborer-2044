@@ -1,0 +1,19 @@
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(65,42,76);
+    position: relative;
+}
+.loader>div{
+   position: absolute;
+   /* border: 1px solid red; */
+   top: 40%;
+   left: 33%;
+   width: 30%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 30px;
+   align-items: center;
+}

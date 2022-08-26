@@ -1,0 +1,39 @@
+.topNav{
+    width: 85%;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.topNav>div:first-child{
+    /* border: 1px solid red; */
+    width: 30%;
+}
+.topNav>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topNav>div:nth-child(2)>svg+div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.topNav>div:nth-child(2)>svg+div>svg{
+    font-size: 35px;
+    color: rgb(209,100,197);
+}
+.topNav>div:nth-child(2) div+div{
+    border-radius: 10px;
+    background-color: rgb(224, 220, 220);
+    padding: 3px;
+}
+.topNav>div:nth-child(2) div+div>svg:last-child{
+    color:rgb(149,137,155) ;
+}

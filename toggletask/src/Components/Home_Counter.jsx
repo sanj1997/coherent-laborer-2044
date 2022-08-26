@@ -3,12 +3,23 @@ import { useEffect, useState } from "react"
 import {FaStopCircle} from "react-icons/fa"
 import styles from "../Styles/main.module.css"
 import Tilt from 'react-tilt'
+const formateZero = (time) => {
+    return time < 10 ? `0` + time : time;
+  };
+  
+  const TimeString = (time) => {
+    // let mili = time % 1000;
+    const seconds = time % 60;
+    const minute = Math.floor(time / 60)  % 60;
+    const hour=Math.floor(time/(60*60))%13
+    return `${formateZero(hour)}:${formateZero(minute)}:${formateZero(seconds)}`;
+  };
 const HomeCounter=()=>{
     const [count,setCount]=useState(0)
     useEffect(()=>{
-        // const id=setInterval(()=>{
-        //    setCount((prev)=>prev+1)
-        // },1000)
+        const id=setInterval(()=>{
+           setCount((prev)=>prev+1)
+        },1000)
     },[])
     return(
         <div style={{display:"flex",flexDirection:"column",justifyContent:"space-between",alignItems:"center",margin:"auto"}}>
@@ -17,7 +28,7 @@ const HomeCounter=()=>{
               <div className="Tilt-inner" >
                 <Box className={styles.counter}>
                   <Text>Stand-up meeting</Text>
-                  <Text>{count}</Text>
+                  <Text>{TimeString(count)}</Text>
                   < FaStopCircle/>
                 </Box>
                </div>
