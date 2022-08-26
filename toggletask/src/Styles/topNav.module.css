@@ -25,9 +25,10 @@
     align-items: center;
     gap: 10px;
 }
-.topNav>div:nth-child(2)>svg+div>svg{
+.topNav>div:nth-child(2)>svg+div>button>svg{
     font-size: 35px;
     color: rgb(209,100,197);
+    cursor: pointer;
 }
 .topNav>div:nth-child(2) div+div{
     border-radius: 10px;

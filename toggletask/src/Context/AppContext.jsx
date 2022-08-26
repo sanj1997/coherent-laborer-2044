@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 export const AppContext=React.createContext()
 const AppConetxtProvider=({children})=>{
-    const [isAuth,setAuth]=useState(false)
+    const [isAuth,setAuth]=useState(true)
     const [email,setEmail]=useState(null)
     const [name,setName]=useState(null)
     const [duration,setDuration]=useState(0)
