@@ -24,4 +24,14 @@ export const getAddClient=(client)=>{
     data:{title:client}
   })
 }
+export const postUser=(userDetails)=>{
+  return axios(`https://polar-bayou-05294.herokuapp.com/users`,{
+    method:"POST",
+    data:userDetails
+  })
+}
+export const getUser=(project)=>{
+  console.log(project)
+  return axios(`https://polar-bayou-05294.herokuapp.com/users?q=${project}`)
+}
 

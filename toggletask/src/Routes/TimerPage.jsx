@@ -2,6 +2,7 @@ import {Box} from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 import LoaderPage from "../Components/loaderPage"
 import SideNav from "../Components/SideNav"
+import ProjectContainer from "../Components/TimerComponents/ProjectContainer"
 import TopNav from "../Components/TopNav"
 import styles from "../Styles/timer.module.css"
 const TimerPage=()=>{
@@ -17,8 +18,13 @@ const TimerPage=()=>{
     }
     return(
         <Box className={styles.main}>
+            <Box>
             <SideNav/>
-            <TopNav/>       
+            </Box>
+            <Box>
+            <TopNav/> 
+            <ProjectContainer/>
+            </Box>      
         </Box>
     )
 }

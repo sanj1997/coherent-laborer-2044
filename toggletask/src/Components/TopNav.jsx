@@ -7,6 +7,8 @@ import CreateProject from "./TimerComponents/CreateProject"
 import { useContext, useRef, useState } from "react"
 import { AppContext } from "../Context/AppContext"
 import ManageButton from "./TimerComponents/ManageButton"
+import { getUser, postUser } from "../Context/api"
+import { getMyTime } from "../Context/getTime"
 const formateZero = (time) => {
     return time < 10 ? `0` + time : time;
   };
@@ -19,21 +21,44 @@ const formateZero = (time) => {
     return `${formateZero(hour)}:${formateZero(minute)}:${formateZero(seconds)}`;
   };
 const TopNav=()=>{
-    const {showButton}=useContext(AppContext)
+    const {showButton,user,setUser}=useContext(AppContext)
     const [count,setCount]=useState(0)
     const [state,setState]=useState(true)
     const ref=useRef(null)
     const handleDuration=()=>{
+        if(state)
+        {
+          handlePostUser()
+        }
         setState(!state)
         if(!state)
         {
           clearInterval(ref.current)
+          handlGetUser(count)
+          // console.log(user)
+          setCount(0)
           return
         }
        ref.current=setInterval(()=>{
           setCount((prev)=>prev+1)
        },1000)
     }
+    const handlePostUser=()=>{
+       postUser(user).then((res)=>{
+        console.log(res)
+       }).catch((res)=>{
+        // console.log(res)
+       })
+    }
+    const handlGetUser=(count)=>{
+      getUser(user.project_name).then((res)=>{
+        console.log(res,"hello")
+        console.log(res.data,"sanjay")
+         let time=getMyTime()
+         setUser({...res.data[0],end_duration:count,end_time:time})
+      })
+    }
+    console.log(user)
     return(
         <Box className={styles.topNav}>
             <Box>

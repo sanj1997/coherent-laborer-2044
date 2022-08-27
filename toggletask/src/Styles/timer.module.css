@@ -1,5 +1,49 @@
 .main{
-    /* border: 1px solid red; */
+    /* border: 5px solid blue; */
     width: 100%;
     display: flex;
+    /* position: relative; */
+}
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(44,19,56);
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(221,111,209);
+    height: 50px;
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(221,111,209);
+}
+.main>div:first-child{
+    /* border: 2px solid red; */
+    width: 15%;
+    height: 100vh;
+    position: sticky;
+    top: 0%;
+}
+.main>div:nth-child(2){
+    /* border: 2px solid red; */
+    width: 85%;
+    /* height: 100vh; */
+}
+.main>div:nth-child(2)>div:nth-child(1)
+{
+    /* border: 3px solid teal; */
+    position: "-webkit-sticky";
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.main>div:nth-child(2)>div:nth-child(2)
+{
+    /* border: 3px solid orange; */
+    min-height: 100vh;
 }

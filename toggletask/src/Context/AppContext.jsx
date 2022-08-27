@@ -1,12 +1,21 @@
 import React, { useState } from "react"
 export const AppContext=React.createContext()
+const initialState={
+    name_of_user:"",
+    project_name:"",
+    client_name:"",
+    start_duration:0,
+    start_time:null,
+    end_time:null,
+    end_duration:null
+}
 const AppConetxtProvider=({children})=>{
-    const [isAuth,setAuth]=useState(true)
+    const [isAuth,setAuth]=useState(false)
     const [email,setEmail]=useState(null)
     const [name,setName]=useState(null)
     const [duration,setDuration]=useState(0)
     const [showButton,setShowButton]=useState(true)
-    const [user,setUser]=useState({client:"",project:"",user:""})
+    const [user,setUser]=useState(initialState)
     const handleLogin=(email,name)=>{
         setAuth(true)
         setEmail(email)
