@@ -10,6 +10,7 @@ import {
 import {useContext, useState} from "react" 
 import {AiOutlinePlus} from "react-icons/ai"
 import { AppContext } from '../../Context/AppContext'
+import { getMyTime } from '../../Context/getTime'
 import SelectClient from './SelectClient'
 import Template from './Template'
 import Visibility from './Visibility'
@@ -18,11 +19,14 @@ const CreateProject=()=>{
     const {name,duration,user,setUser,setShowButton}=useContext(AppContext)
     const [project,setProject]=useState("")
   const handleAddProject=(company)=>{
-      setUser({...user,client:company,project:project,user:name,duration:duration})
+      let time=getMyTime()
+      // console.log(time)
+      setUser({...user,client_name:company,project_name:project,name_of_user:name,start_time:time})
   }
   const handleAddUser=()=>{
     onClose()
     setShowButton(false)
+    // console.log(user)
   }  
   return (
     <>

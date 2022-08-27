@@ -45,7 +45,7 @@ const LoginForm=()=>{
             {isError ? <FormErrorMessage >Email is required.</FormErrorMessage>:null}
             </Box>
             <label style={{width:"100%"}} ><Text color="rgb(244,209,176)" >Password</Text> <Input name="password" onChange={handleUser} color={"brand.100"} backgroundColor={"rgb(44,19,56)"} _focus={{bg:"brand.100",color:"black"}} type={"password"} placeholder='Password' /></label>
-            <Text marginRight={"-80%"}  width="20%" display="flex" justifyContent={"flex-end"} textDecoration="underline"  _hover={{color:"rgb(229,124,216)",cursor:"pointer"}} color={"rgb(244,209,176)"} fontSize="sm">Forgot password?</Text>
+            <Text marginRight={"-70%"}  width="30%" display="flex" justifyContent={"flex-end"} textDecoration="underline"  _hover={{color:"rgb(229,124,216)",cursor:"pointer"}} color={"rgb(244,209,176)"} fontSize="sm">Forgot password?</Text>
             <Button onClick={handleSubmit} width={"60%"} borderRadius={"22px"} _active={"none"} color="white" bg="rgb(229,124,216)" _hover={{bg:"rgb(65,42,76)"}}>Log in</Button>
             <Button marginTop={"20px"}  _active={"none"} bg="none" color="rgb(244,209,176)" _hover={{color:"rgb(229,124,216)"}}><BsFillLockFill/>Company login (SSO)<IoMdArrowDropright/></Button>
            </Box>
