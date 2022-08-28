@@ -1,12 +1,15 @@
 import {Box} from "@chakra-ui/react"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import LoaderPage from "../Components/loaderPage"
 import SideNav from "../Components/SideNav"
+import DefaultContainer from "../Components/TimerComponents/DefaultContainer"
 import ProjectContainer from "../Components/TimerComponents/ProjectContainer"
 import TopNav from "../Components/TopNav"
+import { AppContext } from "../Context/AppContext"
 import styles from "../Styles/timer.module.css"
 const TimerPage=()=>{
     const [loading,setLoading]=useState(true)
+    const {showProject}=useContext(AppContext)
     useEffect(()=>{
        setTimeout(()=>{
          setLoading(false)
@@ -23,7 +26,7 @@ const TimerPage=()=>{
             </Box>
             <Box>
             <TopNav/> 
-            <ProjectContainer/>
+            {showProject? <ProjectContainer/>:<DefaultContainer/>}
             </Box>      
         </Box>
     )

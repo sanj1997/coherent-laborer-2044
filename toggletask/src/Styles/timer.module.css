@@ -2,6 +2,7 @@
     /* border: 5px solid blue; */
     width: 100%;
     display: flex;
+    background-color: rgb(254,249,247);
     /* position: relative; */
 }
 ::-webkit-scrollbar {

@@ -1,11 +1,11 @@
 .pContainer{
-    border:3px solid red;
+    /* border:3px solid red; */
     /* padding: 20px; */
     background-color: rgb(254,249,247);
     /* height: 100%; */
 }
 .pContainer>div:first-child{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -14,19 +14,21 @@
     width: 10%;
 }
 .pContainer>div:first-child>:nth-child(2){
-    width: 30%;
+    width: 40%;
+    /* border: 2px solid teal; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .pContainer>div:nth-child(2)>div:first-child{
-    border: 1px solid teal;
+    /* border: 2px solid teal; */
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .pContainer>div:nth-child(2)>div:first-child>div:first-child{
     width: 5%;
@@ -36,4 +38,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.pContainer>div:nth-child(2)>div:nth-child(2){
+    /* border: 2px solid teal; */
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pContainer>div:nth-child(2)>div:nth-child(2)>div:first-child{
+    /* border: 2px solid teal; */
+    width: 10%;
+    /* display: flex; */
+    /* padding: 15px; */
+    /* justify-content: space-between; */
+    /* align-items: center ; */
+}
+.pContainer>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+    /* border: 2px solid teal; */
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    /* display: flex; */
+    /* padding: 15px; */
+    /* justify-content: space-between; */
+    /* align-items: center ; */
+}
+.pContainer>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:last-child{
+    /* border: 1px solid red; */
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
