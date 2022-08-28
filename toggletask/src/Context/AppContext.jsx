@@ -16,6 +16,7 @@ const AppConetxtProvider=({children})=>{
     const [duration,setDuration]=useState(0)
     const [showButton,setShowButton]=useState(true)
     const [user,setUser]=useState(initialState)
+    const [showProject,setShowProject]=useState(false)
     const handleLogin=(email,name)=>{
         setAuth(true)
         setEmail(email)
@@ -27,7 +28,7 @@ const AppConetxtProvider=({children})=>{
        setName(null)
     }
     return(
-        <AppContext.Provider value={{user,setUser,handleLogin,handleLogout,setName,name,email,isAuth,duration,setDuration,showButton,setShowButton}}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{showProject,setShowProject,user,setUser,handleLogin,handleLogout,setName,name,email,isAuth,duration,setDuration,showButton,setShowButton}}>{children}</AppContext.Provider>
     )
 }
 export default AppConetxtProvider
