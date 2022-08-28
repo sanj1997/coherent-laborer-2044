@@ -48,7 +48,7 @@ const ProjectContainer = () => {
           </Box>
           <Box>
             <Box>
-              <Text fontSize="sm" color={"rgb(126,110,134)"}>{user.start_time} {user.start_time>12? "PM":"AM"}{" "}- {" "}{user.end_time}  {user.end_time>12? "PM":"AM"}</Text>
+              <Text fontSize="sm" color={"rgb(126,110,134)"}>{user.start_time} {user.start_time>"12"? "PM":"AM"}{" "}- {" "}{user.end_time}  {user.end_time>"12"? "PM":"AM"}</Text>
             </Box>
             <Box>
               <Text fontSize="sm" color={"rgb(126,110,134)"}>{TimeString(user.end_duration)}</Text>
